@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/day_bg">
+
+    <ImageView
+        android:id="@+id/user_profile"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:src="@drawable/user_profile"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/weather_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_profile"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="10 °C"
+        android:textSize="34dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_profile"
+        android:layout_below="@id/weather_tmp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="星期一"
+        android:textSize="24dp"
+        android:textColor="#ffffff"/>
+    
+    <ImageView
+        android:id="@+id/weather"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/weather"
+        android:layout_below="@id/weather_tmp"
+        android:layout_toRightOf="@id/date"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+    
+    <TextView
+        android:id="@+id/change_saying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/weather"
+        android:layout_marginLeft="16dp"
+        android:text="--Life is like a boat."
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+    
+    <TextView
+        android:id="@+id/weather_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather"
+        android:layout_toRightOf="@id/change_saying"
+        android:layout_marginLeft="26dp"
+        android:text="多云"
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+    
+    <ListView
+        android:id="@+id/day_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_saying"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:divider="#00000000"
+        android:dividerHeight="16dp"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:clipChildren="false"></ListView>
+
+</RelativeLayout>

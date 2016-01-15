@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Course</string>
+
+    <string name="code_hint">请输入你的学号</string>
+    <string name="passwd_hint">请输入你的密码</string>
+    <string name="login_btn">让我们开始吧</string>
+
+</resources>
